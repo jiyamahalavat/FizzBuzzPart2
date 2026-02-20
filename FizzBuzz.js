@@ -12,12 +12,12 @@
 // If divisible by 5, set the output to "Buzz"
 // Otherwise, set the output to the number itself
 
-  const num = (document.getElementById("numberInput"));
+  const input = (document.getElementById("numberInput"));
   const submit = document.getElementById("submit");
   const result = document.getElementById("result");
 
 submit.addEventListener("click",function() {
-  let num = Number(num.value);
+  let num = Number(input.value);
   let output;
   
   if (isNaN(num)) {
@@ -33,7 +33,6 @@ submit.addEventListener("click",function() {
     result.textContent = "Buzz";
   }
   else {
-    output = num;
+    result.textContent = num
   }
-  result.textContent = output;
 });
