@@ -19,7 +19,7 @@
 submit.addEventListener("click",function() {
   let num = Number(num.value);
   let output;
-
+  
   if (isNaN(num)) {
     result.textContent = "Please enter a valid number.";
   }
@@ -33,7 +33,7 @@ submit.addEventListener("click",function() {
     result.textContent = "Buzz";
   }
   else {
-    result.textContent = num;
+    output = num;
   }
-
+  result.textContent = output;
 });
