@@ -16,7 +16,8 @@
 document.getElementById("submitBtn").addEventListener("click", function() {
 
   const num = Number(document.getElementById("numberInput").value);
-  let result = document.getElementById("result");
+  const result = document.getElementById("result");
+//  let result = document.getElementById("result");
 
   if (isNaN(num)) {
     result.textContent = "Please enter a valid number.";
