@@ -12,12 +12,13 @@
 // If divisible by 5, set the output to "Buzz"
 // Otherwise, set the output to the number itself
 
-
-document.getElementById("submitBtn").addEventListener("click", function() {
-
   const num = Number(document.getElementById("numberInput").value);
+  const submit = document.getElementById("submit");
   const result = document.getElementById("result");
-//  let result = document.getElementById("result");
+
+submit.addEventListener("click",function() {
+  let num = Number(num.value);
+  let output;
 
   if (isNaN(num)) {
     result.textContent = "Please enter a valid number.";
