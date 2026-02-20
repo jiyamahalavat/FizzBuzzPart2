@@ -12,7 +12,7 @@
 // If divisible by 5, set the output to "Buzz"
 // Otherwise, set the output to the number itself
 
-  const num = Number(document.getElementById("numberInput").value);
+  const num = (document.getElementById("numberInput"));
   const submit = document.getElementById("submit");
   const result = document.getElementById("result");
 
